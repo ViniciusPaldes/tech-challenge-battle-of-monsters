@@ -1,5 +1,5 @@
 import styled from '@emotion/native';
-import { Card, Title } from 'react-native-paper';
+import { Card, Title,  ProgressBar as PaperProgressBar } from 'react-native-paper';
 import { colors } from '../../constants/colors';
 
 export const BattleMonsterCard = styled(Card)`
@@ -24,4 +24,10 @@ export const BattleMonsterTitle = styled(Title)`
   line-height: 42px;
   margin: auto;
   color: ${colors.black};
+`;
+
+export const ProgressBar = styled(PaperProgressBar)`
+  background-color: ${colors.progressBarBackground};
+  border-radius: 4px;
+  height: 7px
 `;
