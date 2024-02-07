@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useAppDispatch } from '../../app/hooks';
 import { Monster } from '../../models/interfaces/monster.interface';
-import { setSelectedMonster } from '../../reducers/monsters/monsters.actions';
+import { setOpponentMonster, setSelectedMonster } from '../../reducers/monsters/monsters.actions';
 import {
   MonsterCardContainer,
   Img,
@@ -26,6 +26,7 @@ const MonstersList: React.FC<MonstersListProps> = ({ monsters }) => {
     const value = selectedMonsterId === monster.id ? null : monster.id;
     setSelectedMonsterId(value);
     dispatch(setSelectedMonster(!value ? null : monster));
+    dispatch(setOpponentMonster(!value ? null : monster));
   };
 
   return (

@@ -12,9 +12,9 @@ export const WinnerDisplayContainer = styled(View)`
 `;
 
 export const WinnerText = styled(Text)`
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: '26px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
 `;

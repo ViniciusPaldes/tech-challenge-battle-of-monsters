@@ -1,10 +1,10 @@
 import styled from '@emotion/native';
-import { View, ScrollView } from 'react-native';
+import { ScrollView } from 'react-native';
 import { Button } from 'react-native-paper';
 import { colors } from '../../constants/colors';
 
 // Styled Components
-export const PageContainer = styled(View)`
+export const PageContainer = styled(ScrollView)`
   display: flex;
   flex-direction: column;
   max-width: 820px;
